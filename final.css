@@ -1,0 +1,210 @@
+*{    
+    color: #5a5c69;
+}
+
+body{
+    margin: 0 1.5rem;
+    background-color: #f8f9fc;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.text-center{
+    text-align: center !important;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.first-row, .second-row{
+    display: flex;
+    justify-content: center;
+}
+
+.select-form{
+    max-width: 80%;
+    width: 100%;
+    height: 5vmin;
+}
+
+.nav-bar{
+    flex-shrink: 1;
+    height: 10vmin;
+    font-size: 1.75rem;
+    display: flex;
+    align-items: center;
+    border-bottom: #5a5c69 solid 1px;
+    padding: 0 5%;
+}
+
+/* 시작과 멈춤버튼 */
+.runing-and-pause-btn{
+    float: right ;
+    display: flex;
+    margin-left: auto;
+}
+
+.btns{
+    margin-left: 5px;
+    flex-shrink: 1;
+}
+
+.state_alert{
+    text-align: center;
+    position: absolute; 
+    left: 50vw;
+    width: 50vmin;
+    height: auto;
+    margin-left: -25vmin;
+    z-index: 1;
+}
+/* 시작과 멈춤 끝 */
+
+#title{
+    /* padding-left: 5%; */
+    font-size: 5vmin;
+}
+
+/* 분류에 따른 정보들을 담는 column-box */
+.column-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50vw;
+    max-width: 800px;
+    background-color: #f8f9fc;
+    margin: 3vmin 3vmin 3vmin 2vmin; /*위쪽부터 시계방향*/
+    padding: 2vmin 0;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15) 
+}
+
+/* 카드 공통 옵선 */
+.card-title{
+    width: 90%;
+    text-align: center; 
+    background-color: white;
+    margin-bottom: 3vmin;
+    padding: 1vmin 0 2vmin 0;
+    border-bottom: #afb1bbc0 solid 3px;
+}
+
+/* 상태정보 */
+.status-card{
+    background-color: white !important;
+    margin: 0;
+    width: 80%;
+    /* max-width: 18rem; */
+    height:fit-content;
+    box-shadow: 0 .15rem 1.75rem 0 rgba(58,59,69,.15);
+}
+
+
+.status-card-header{
+    text-transform: uppercase !important;
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+.status-card-body{
+    padding: 0 10px;
+    background-color: white;
+}
+
+.status-card-text{
+    background-color: white;
+}
+
+.progress {
+    margin: 5px 0 10px 0;
+}
+
+
+/* 여기는 더 많은 status 정보창 */
+#status_option{
+    width: 80%;
+}
+
+/* 미션정보 */
+.mission-vaildation{
+    margin: 6vmin 0 1vmin 0;
+    width: 80%;
+    visibility: hidden;
+    transition: visibility 2s ease-in-out; /*속성 transition 추후 수정*/
+}
+
+.mission_detail{
+    padding-bottom: 6%;
+}
+/* 미션정보 끝*/
+
+/* 레지스터 정보 */
+.register-box{
+    width: 100vw !important;
+    max-width: 1600px;
+}
+
+.register-title{
+    text-align: left;
+    text-indent: 4%;
+}
+
+.now-register-info{
+    margin: 0 !important;
+}
+
+.register-card{
+    margin: 4vmin 0 1vmin 0;
+    visibility: hidden;
+}
+
+@media all and (min-width:320px) {
+    .register-card{
+        width: 80%;
+    }
+}
+@media all and (min-width:768px) {
+    .register-card{
+        width: 60%;
+    }
+}
+@media all and (min-width:1024px) {
+    .register-card{
+        width: 40%;
+    }
+}
+
+.register-inputs{
+    margin-bottom: 10px !important;
+}
+
+.register-btns{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.register-btn{
+    margin-left: 1%;
+}
+
+register-change-box{
+    visibility: hidden;
+}
+
+.regi-msg{
+    position: absolute; 
+    width: 80%;
+    height: auto;
+    margin-top: 10%;
+    margin-left: -40%;
+    z-index: 1;
+}
+/* 레지스터 정보 끝 */
+
+
